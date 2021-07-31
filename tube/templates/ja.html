@@ -1,0 +1,13 @@
+{%extends 'base.html'%}
+
+    {%for instance in object_list%}
+    <div class="container">
+        <label for="man">family login</label>
+        <input type="text" name="man" id="man" value="" />
+    </div>
+    <div class="container">
+        <p> <a href=" {{instance.get_absolute_url}}">Login </a></p>
+    </div>
+   
+    {%endfor%}
+
